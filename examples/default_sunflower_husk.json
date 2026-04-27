@@ -1,0 +1,92 @@
+{
+  "feedstock": "Лузга подсолнечника",
+  "feedstock_preliminary": true,
+  "pre_stages": {
+    "T_pyrolysis_C": 520.0,
+    "T_char_in_C": 780.0,
+    "char_yield_pct": 33.0,
+    "rho_char_0": 470.0,
+    "porosity_0": 0.4,
+    "S_BET_0_m2g": 180.0,
+    "rho_pellet_kgm3": 470.0,
+    "particle_size_mm": 4.0,
+    "pellet_length_mm": 8.0,
+    "binder_pct": 6.0
+  },
+  "operating": {
+    "T_steam_in_C": 920.0,
+    "T_wall_C": 920.0,
+    "T_coal_in_C": 800.0,
+    "G_steam_in": 0.3,
+    "steam_to_coal_ratio": 1.4,
+    "P_reactor": 101325.0
+  },
+  "reactor": {
+    "H": 2.0,
+    "L": 0.5,
+    "W_s": 2e-05,
+    "rho_bulk_0": 470.0,
+    "d_p_0": 0.004
+  },
+  "mesh": {
+    "N_h": 80,
+    "N_l": 32
+  },
+  "rpm": {
+    "S0": 175000.0,
+    "eps0": 0.4,
+    "psi": 6.2,
+    "S_area_floor": 1e-09,
+    "d_pore_min": 4e-10,
+    "d_pore_max": 5e-06
+  },
+  "kinetics": {
+    "k1": 3.6e-08,
+    "E1": 130000.0,
+    "k2": 1.4e-05,
+    "E2": 42000.0,
+    "k3": 1e-05,
+    "E3": 35000.0,
+    "k_wgs": 2.8e-07,
+    "E_wgs": 82000.0
+  },
+  "micro": {
+    "particle_geometry": "sphere",
+    "eta_min": 0.03,
+    "eta_max": 1.0,
+    "D_eff_min": 1e-10,
+    "D_eff_max": 0.005,
+    "macro_accessibility": 0.03,
+    "kinetic_scale": 1.08
+  },
+  "targets": {
+    "S_BET_min_m2g": 750.0,
+    "Y_AU_min_pct": 60.0,
+    "X_min_pct": 30.0,
+    "X_max_pct": 40.0,
+    "gas_residual_max_pct": 10.0,
+    "T_s_max_C": 980.0
+  },
+  "meta": {
+    "feedstock_profile": {
+      "rho_bulk_0": 470.0,
+      "eps0": 0.4,
+      "S0": 175000.0,
+      "reactivity_factor": 1.08,
+      "stability_factor": 0.7,
+      "micro_meso_bias": "meso",
+      "ash_factor": 1.12,
+      "steam_temp_range_C": [
+        760.0,
+        880.0
+      ],
+      "burnoff_range_pct": [
+        28.0,
+        38.0
+      ],
+      "notes": "preliminary / to be calibrated"
+    },
+    "version": "v3.2-wrapper",
+    "output_dir": "section_2_5_output"
+  }
+}
